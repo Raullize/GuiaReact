@@ -63,11 +63,11 @@ O React continua evoluindo, focando em desempenho, experiência do desenvolvedor
 - [React Patterns](https://reactpatterns.com/)
 - [Awesome React](https://github.com/enaqx/awesome-react)
 
-## 👨‍💻 Sobre o Projeto 🚀
+## 👨‍💻 Sobre o Projeto
 
 Este projeto é uma documentação aberta sobre React, criada para servir como referência rápida e guia de aprendizado. Cada seção aborda um aspecto específico do React com exemplos práticos e explicações concisas.
 
-## 🤝 Contribuição 👥
+## 🤝 Contribuição
 
 Contribuições são bem-vindas! Se você encontrar erros, quiser adicionar mais conteúdo ou melhorar as explicações, sinta-se à vontade para:
 
