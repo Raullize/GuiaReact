@@ -54,7 +54,7 @@ O **React** é uma biblioteca JavaScript para construção de interfaces de usu�
 
 O React continua evoluindo, focando em desempenho, experiência do desenvolvedor e novos padrões para desenvolvimento de interfaces.
 
-## 🔗 Links úteis 🌐
+## 🔗 Links úteis
 - [Documentação oficial](https://reactjs.org/docs/getting-started.html)
 - [Create React App](https://create-react-app.dev/)
 - [React Dev Tools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi)
