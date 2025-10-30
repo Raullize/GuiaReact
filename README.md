@@ -1,27 +1,27 @@
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=61DAFB&height=180&section=header&text=GuiaReact&fontSize=30&fontColor=fff&animation=twinkling&fontAlignY=35"/>
 
-# ⚛️ GuiaReact ✨
+# ⚛️ GuiaReact
 
 Bem-vindo ao **GuiaReact**! ✌️ Este guia tem como objetivo oferecer uma introdução abrangente ao React para iniciantes e até mesmo para aqueles que já possuem experiência intermediária e desejam relembrar conceitos fundamentais. Aqui você encontrará conceitos, exemplos práticos e dicas úteis. Vamos lá! 🚀
 
-## 📚 Conteúdo 📋
+## 📚 Conteúdo
 
 1. [⚛️ O que é React?](#o-que-e-react)
-2. [📂 Instalação e configuração](contents/instalacao-e-configuracao.md) 📝
-3. [🧩 Componentes e props](contents/componentes-e-props.md) 🔄
-4. [🔄 Estado e ciclo de vida](contents/estado-e-ciclo-de-vida.md) 🔍
-5. [⚡ Eventos e manipulação](contents/eventos-e-manipulacao.md) 🖱️
-6. [📋 Renderização condicional](contents/renderizacao-condicional.md) 🔀
-7. [📝 Listas e chaves](contents/listas-e-chaves.md) 🔑
-8. [🧪 Formulários e inputs](contents/formularios-e-inputs.md) 📄
-9. [🔌 Hooks fundamentais](contents/hooks-fundamentais.md) 🎣
-10. [🧭 Roteamento com React Router](contents/roteamento-com-react-router.md) 🗺️
-11. [🌐 Consumo de APIs](contents/consumo-de-apis.md) 📡
-12. [💾 Gerenciamento de estado](contents/gerenciamento-de-estado.md) 📊
-13. [🔧 Testes em React](contents/testes-em-react.md) 🧪
-14. [🏆 Boas práticas em React](contents/boas-praticas-react.md) 📋
+2. [📂 Instalação e configuração](contents/instalacao-e-configuracao.md)
+3. [🧩 Componentes e props](contents/componentes-e-props.md)
+4. [🔄 Estado e ciclo de vida](contents/estado-e-ciclo-de-vida.md)
+5. [⚡ Eventos e manipulação](contents/eventos-e-manipulacao.md)
+6. [📋 Renderização condicional](contents/renderizacao-condicional.md)
+7. [📝 Listas e chaves](contents/listas-e-chaves.md)
+8. [🧪 Formulários e inputs](contents/formularios-e-inputs.md)
+9. [🔌 Hooks fundamentais](contents/hooks-fundamentais.md)
+10. [🧭 Roteamento com React Router](contents/roteamento-com-react-router.md)
+11. [🌐 Consumo de APIs](contents/consumo-de-apis.md)
+12. [💾 Gerenciamento de estado](contents/gerenciamento-de-estado.md)
+13. [🔧 Testes em React](contents/testes-em-react.md)
+14. [🏆 Boas práticas em React](contents/boas-praticas-react.md)
 
-<h2 id="o-que-e-react"> 🤔 O que é React? 💭</h2>
+<h2 id="o-que-e-react"> 🤔 O que é React?</h2>
 
 O **React** é uma biblioteca JavaScript para construção de interfaces de usuário. Desenvolvido pelo Facebook (agora Meta), o React permite criar UIs interativas e reativas de forma eficiente através de componentes reutilizáveis.
 
