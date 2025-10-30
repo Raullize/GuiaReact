@@ -55,13 +55,13 @@ O **React** é uma biblioteca JavaScript para construção de interfaces de usu�
 O React continua evoluindo, focando em desempenho, experiência do desenvolvedor e novos padrões para desenvolvimento de interfaces.
 
 ## 🔗 Links úteis 🌐
-- [Documentação oficial](https://reactjs.org/docs/getting-started.html) 📚
-- [Create React App](https://create-react-app.dev/) 🏗️
-- [React Dev Tools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi) 🔧
-- [Repositório GitHub](https://github.com/facebook/react) 📂
-- [CodeSandbox React](https://codesandbox.io/s/new) 🧪
-- [React Patterns](https://reactpatterns.com/) 📋
-- [Awesome React](https://github.com/enaqx/awesome-react) ⭐
+- [Documentação oficial](https://reactjs.org/docs/getting-started.html)
+- [Create React App](https://create-react-app.dev/)
+- [React Dev Tools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi)
+- [Repositório GitHub](https://github.com/facebook/react)
+- [CodeSandbox React](https://codesandbox.io/s/new)
+- [React Patterns](https://reactpatterns.com/)
+- [Awesome React](https://github.com/enaqx/awesome-react)
 
 ## 👨‍💻 Sobre o Projeto 🚀
 
