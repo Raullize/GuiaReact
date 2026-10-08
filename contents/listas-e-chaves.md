@@ -1,10 +1,10 @@
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=61DAFB&height=120&section=header"/>
 
-# 📝 Listas e Chaves no React 🔑
+# Listas e Chaves no React
 
-A renderização de listas é uma das operações mais comuns em aplicações React. Esta seção explora como trabalhar eficientemente com coleções de dados, renderizar elementos a partir delas e entender a importância das chaves (keys) nesse processo. 🚀
+A renderização de listas é uma das operações mais comuns em aplicações React. Esta seção explora como trabalhar eficientemente com coleções de dados, renderizar elementos a partir delas e entender a importância das chaves (keys) nesse processo.
 
-## 🔁 Renderizando Múltiplos Componentes
+## Renderizando Múltiplos Componentes
 
 No React, você pode criar coleções de elementos e incluí-los no JSX usando chaves `{}`:
 
@@ -24,7 +24,7 @@ function ListaNumeros() {
 
 Este é o padrão básico para renderizar listas no React, embora esteja faltando algo importante: as **chaves**.
 
-## 🔑 Chaves (Keys): O Que São e Por Que São Importantes
+## Chaves (Keys): O Que São e Por Que São Importantes
 
 As chaves ajudam o React a identificar quais itens foram alterados, adicionados ou removidos. Elas devem ser atribuídas aos elementos dentro de um array para dar a eles uma identidade estável:
 
@@ -43,7 +43,7 @@ function ListaNumeros() {
 }
 ```
 
-### 🎯 Por que chaves são necessárias?
+### Por que chaves são necessárias?
 
 1. **Desempenho**: Ajudam o React a otimizar a renderização identificando quais elementos mudaram
 2. **Estado Consistente**: Mantêm o estado dos componentes quando são re-renderizados
@@ -56,7 +56,7 @@ Sem chaves, você verá este aviso no console:
 Warning: Each child in a list should have a unique "key" prop.
 ```
 
-## 🎨 Selecionando Boas Chaves
+## Selecionando Boas Chaves
 
 ### ✅ Boas opções para chaves:
 
@@ -101,9 +101,9 @@ const itens = dados.map((item, index) =>
 <li key={item.categoria}>{item.nome}</li>
 ```
 
-## 🧩 Padrões de Uso de Listas e Chaves
+## Padrões de Uso de Listas e Chaves
 
-### 📋 Renderizando Listas Diretamente no JSX
+### Renderizando Listas Diretamente no JSX
 
 ```jsx
 function ListaDeTarefas({ tarefas }) {
@@ -119,7 +119,7 @@ function ListaDeTarefas({ tarefas }) {
 }
 ```
 
-### 🔄 Usando Componentes para Itens de Lista
+### Usando Componentes para Itens de Lista
 
 ```jsx
 function ItemTarefa({ tarefa }) {
@@ -146,7 +146,7 @@ function ListaDeTarefas({ tarefas }) {
 
 Observe que a chave deve estar no elemento que você está repetindo, não no componente filho.
 
-### 📊 Listas Aninhadas
+### Listas Aninhadas
 
 Para listas aninhadas, cada nível precisa de suas próprias chaves únicas:
 
@@ -169,7 +169,7 @@ function ListaCategorias({ categorias }) {
 }
 ```
 
-### 🗂️ Agrupando Dados em Seções
+### Agrupando Dados em Seções
 
 ```jsx
 function ListaProdutos({ produtos }) {
@@ -200,9 +200,9 @@ function ListaProdutos({ produtos }) {
 }
 ```
 
-## 🧠 Manipulando Dados de Lista
+## Manipulando Dados de Lista
 
-### 🗑️ Filtrando Itens
+### Filtrando Itens
 
 ```jsx
 function ListaTarefasFiltradas({ tarefas }) {
@@ -239,7 +239,7 @@ function ListaTarefasFiltradas({ tarefas }) {
 }
 ```
 
-### 🔄 Ordenando Itens
+### Ordenando Itens
 
 ```jsx
 function ListaOrdenavel({ itens }) {
@@ -286,7 +286,7 @@ function ListaOrdenavel({ itens }) {
 }
 ```
 
-### 🔍 Buscando em Listas
+### Buscando em Listas
 
 ```jsx
 function ListaComBusca({ itens }) {
@@ -319,9 +319,9 @@ function ListaComBusca({ itens }) {
 }
 ```
 
-## 🚀 Técnicas Avançadas
+## Técnicas Avançadas
 
-### 🔄 Lista com Adição e Remoção de Itens
+### Lista com Adição e Remoção de Itens
 
 ```jsx
 function ListaEditavel() {
@@ -370,7 +370,7 @@ function ListaEditavel() {
 }
 ```
 
-### 📋 Lista com Edição Inline
+### Lista com Edição Inline
 
 ```jsx
 function ListaComEdicao() {
@@ -424,7 +424,7 @@ function ListaComEdicao() {
 }
 ```
 
-### 🖱️ Lista com Drag and Drop
+### Lista com Drag and Drop
 
 ```jsx
 // Com a biblioteca react-beautiful-dnd
@@ -481,9 +481,9 @@ function ListaArrastavel() {
 }
 ```
 
-## 🛠️ Dicas e Melhores Práticas
+## Dicas e Melhores Práticas
 
-### 🚫 Evitar Trabalhar com Índices como Chaves
+### Evitar Trabalhar com Índices como Chaves
 
 ```jsx
 // ❌ Problemático em listas dinâmicas
@@ -497,7 +497,7 @@ function ListaArrastavel() {
 ))}
 ```
 
-### 🏗️ Evite Criar Componentes dentro do Map
+### Evite Criar Componentes dentro do Map
 
 ```jsx
 // ❌ Ruim: cria uma nova função a cada renderização
@@ -532,7 +532,7 @@ function ItemLista({ item, onClick }) {
 ))}
 ```
 
-### 🧠 Use Memoização para Listas Grandes
+### Use Memoização para Listas Grandes
 
 ```jsx
 import React, { useMemo } from 'react';
@@ -554,7 +554,7 @@ function ListaGrande({ itens, filtro }) {
 }
 ```
 
-### 🔄 Virtualização para Listas Muito Grandes
+### Virtualização para Listas Muito Grandes
 
 Para listas com milhares de itens, use bibliotecas de virtualização como `react-virtualized` ou `react-window`:
 
@@ -581,9 +581,9 @@ function ListaVirtualizada({ itens }) {
 }
 ```
 
-## 🐞 Depurando Problemas Comuns
+## Depurando Problemas Comuns
 
-### 🔄 Problema: Componentes não Re-renderizam Quando Esperado
+### Problema: Componentes não Re-renderizam Quando Esperado
 
 Se você modificar o array diretamente, React pode não detectar a mudança:
 
@@ -600,7 +600,7 @@ function addItem() {
 }
 ```
 
-### 🗝️ Problema: Warning de Chaves Duplicadas
+### Problema: Warning de Chaves Duplicadas
 
 ```jsx
 // ❌ Pode gerar chaves duplicadas
@@ -622,6 +622,6 @@ const pessoas = [
 
 ---
 
-[🔙 Voltar ao índice principal](../README.md)
+[Voltar ao índice principal](../README.md)
 
-<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=61DAFB&height=120&section=footer"/> 
+<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=61DAFB&height=120&section=footer"/>

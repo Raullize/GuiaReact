@@ -1,20 +1,20 @@
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=61DAFB&height=120&section=header"/>
 
-# 💾 Gerenciamento de Estado no React 📊
+# Gerenciamento de Estado no React
 
-O gerenciamento de estado é um aspecto crucial no desenvolvimento de aplicações React. À medida que suas aplicações crescem, o controle e fluxo de dados torna-se mais complexo e desafiador. Esta seção explora diferentes abordagens para gerenciar estado em aplicações React, desde soluções nativas até bibliotecas especializadas. 🚀
+O gerenciamento de estado é um aspecto crucial no desenvolvimento de aplicações React. À medida que suas aplicações crescem, o controle e fluxo de dados torna-se mais complexo e desafiador. Esta seção explora diferentes abordagens para gerenciar estado em aplicações React, desde soluções nativas até bibliotecas especializadas.
 
-## 🤔 O que é Estado e Por Que Gerenciá-lo?
+## O que é Estado e Por Que Gerenciá-lo?
 
 **Estado** representa os dados que podem mudar ao longo do tempo em sua aplicação. O gerenciamento eficiente do estado é fundamental porque:
 
-- 🧩 **Complexidade crescente**: Aplicações maiores têm mais dados para controlar
-- 🔄 **Compartilhamento de dados**: Componentes em diferentes níveis precisam acessar os mesmos dados
-- 🔍 **Previsibilidade**: Mudanças de estado devem ser rastreáveis e previsíveis
-- 🧪 **Testabilidade**: Código com estado bem gerenciado é mais fácil de testar
-- ⚡ **Desempenho**: Atualizações desnecessárias afetam a experiência do usuário
+- **Complexidade crescente**: Aplicações maiores têm mais dados para controlar
+- **Compartilhamento de dados**: Componentes em diferentes níveis precisam acessar os mesmos dados
+- **Previsibilidade**: Mudanças de estado devem ser rastreáveis e previsíveis
+- **Testabilidade**: Código com estado bem gerenciado é mais fácil de testar
+- **Desempenho**: Atualizações desnecessárias afetam a experiência do usuário
 
-## 🧠 Níveis de Estado
+## Níveis de Estado
 
 Podemos categorizar o estado em diferentes níveis:
 
@@ -24,9 +24,9 @@ Podemos categorizar o estado em diferentes níveis:
 4. **Estado Persistido**: Armazenado além da sessão atual (localStorage, etc.)
 5. **Estado Servidor**: Dados mantidos em um servidor remoto
 
-## 🛠️ Abordagens Nativas do React
+## Abordagens Nativas do React
 
-### 🪝 useState e useReducer
+### useState e useReducer
 
 Para estado local simples, `useState` é suficiente:
 
@@ -126,7 +126,7 @@ function CarrinhoCompras() {
 }
 ```
 
-### 🧬 Context API
+### Context API
 
 O `Context` permite compartilhar dados entre componentes sem passar props manualmente através de cada nível:
 
@@ -225,11 +225,11 @@ function BotaoAdicionarAoCarrinho({ produto }) {
 }
 ```
 
-## 📚 Bibliotecas de Gerenciamento de Estado
+## Bibliotecas de Gerenciamento de Estado
 
 Para aplicações maiores e mais complexas, bibliotecas especializadas oferecem recursos adicionais.
 
-### 🔄 Redux
+### Redux
 
 Redux é uma das bibliotecas mais populares para gerenciamento de estado:
 
@@ -285,7 +285,7 @@ function ContadorComponente() {
 }
 ```
 
-### 📦 Redux Toolkit
+### Redux Toolkit
 
 O Redux Toolkit simplifica o uso do Redux e é a abordagem recomendada atualmente:
 
@@ -354,7 +354,7 @@ function ContadorComponente() {
 }
 ```
 
-### 🧿 Zustand
+### Zustand
 
 Zustand é uma biblioteca minimalista que simplifica o gerenciamento de estado global:
 
@@ -384,7 +384,7 @@ function Contador() {
 }
 ```
 
-### 🔄 Recoil
+### Recoil
 
 Recoil é uma biblioteca desenvolvida pelo Facebook que introduz o conceito de átomos:
 
@@ -440,7 +440,7 @@ function ContadorComponente() {
 }
 ```
 
-### ⚛️ Jotai
+### Jotai
 
 Jotai é inspirado no Recoil mas com uma abordagem mais simples:
 
@@ -472,11 +472,11 @@ function Contador() {
 }
 ```
 
-## 🧠 Estratégias para Escolher uma Solução
+## Estratégias para Escolher uma Solução
 
 A escolha da abordagem de gerenciamento de estado depende da complexidade e requisitos de sua aplicação:
 
-### 📊 Guia de Decisão
+### Guia de Decisão
 
 1. **Aplicações Pequenas**:
    - Use `useState` e `useReducer` para componentes individuais
@@ -490,18 +490,18 @@ A escolha da abordagem de gerenciamento de estado depende da complexidade e requ
    - Redux Toolkit para gerenciamento robusto e ecossistema maduro
    - Recoil para casos de uso com estado altamente interconectado
 
-### 🎯 Fatores a Considerar
+### Fatores a Considerar
 
-- 🧱 **Complexidade**: Quanto mais complexo o estado, mais estruturada deve ser a solução
-- 🔄 **Frequência de atualizações**: Otimizações importantes para atualizações frequentes
-- 👥 **Tamanho da equipe**: Soluções com convenções claras ajudam equipes maiores
-- 📚 **Curva de aprendizado**: Considere o conhecimento atual da equipe
-- 🔍 **Ferramentas de debugging**: Algumas soluções têm suporte melhor para desenvolvimento
-- 🧪 **Testabilidade**: Estado previsível é mais fácil de testar
+- **Complexidade**: Quanto mais complexo o estado, mais estruturada deve ser a solução
+- **Frequência de atualizações**: Otimizações importantes para atualizações frequentes
+- **Tamanho da equipe**: Soluções com convenções claras ajudam equipes maiores
+- **Curva de aprendizado**: Considere o conhecimento atual da equipe
+- **Ferramentas de debugging**: Algumas soluções têm suporte melhor para desenvolvimento
+- **Testabilidade**: Estado previsível é mais fácil de testar
 
-## 📝 Padrões e Práticas para Gerenciamento de Estado
+## Padrões e Práticas para Gerenciamento de Estado
 
-### 🛠️ Command Query Responsibility Segregation (CQRS)
+### Command Query Responsibility Segregation (CQRS)
 
 Separe operações que modificam estado (commands) das que apenas leem (queries):
 
@@ -531,7 +531,7 @@ function useUsuarioState() {
 }
 ```
 
-### 🧩 Normalização de Dados
+### Normalização de Dados
 
 Para dados complexos ou relacionais, normalize-os para evitar duplicação:
 
@@ -562,7 +562,7 @@ const getUsuariosDoDepartamento = (state, departamentoId) => {
 };
 ```
 
-### 🎣 Custom Hooks para Lógica de Estado
+### Custom Hooks para Lógica de Estado
 
 Encapsule lógica de estado complexa em hooks personalizados:
 
@@ -689,7 +689,7 @@ function FormularioContato() {
 }
 ```
 
-## 🧪 Testando o Gerenciamento de Estado
+## Testando o Gerenciamento de Estado
 
 Testar adequadamente seu gerenciamento de estado é crucial:
 
@@ -760,7 +760,7 @@ describe('useContador', () => {
 });
 ```
 
-## 🌟 Dicas e Melhores Práticas
+## Dicas e Melhores Práticas
 
 1. **Mantenha o estado mínimo**: Guarde apenas o que realmente precisa ser um estado
 2. **Coloque o estado o mais próximo possível de onde é usado**: Não eleve estado sem necessidade
@@ -773,6 +773,6 @@ describe('useContador', () => {
 
 ---
 
-[🔙 Voltar ao índice principal](../README.md)
+[Voltar ao índice principal](../README.md)
 
-<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=61DAFB&height=120&section=footer"/> 
+<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=61DAFB&height=120&section=footer"/>

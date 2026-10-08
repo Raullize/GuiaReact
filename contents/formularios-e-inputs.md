@@ -1,14 +1,14 @@
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=61DAFB&height=120&section=header"/>
 
-# 📝 Formulários e Inputs no React 📋
+# Formulários e Inputs no React
 
-Formulários são componentes essenciais em aplicações web interativas. Esta seção explora como o React lida com inputs e formulários, desde os conceitos básicos até técnicas avançadas e boas práticas. 🚀
+Formulários são componentes essenciais em aplicações web interativas. Esta seção explora como o React lida com inputs e formulários, desde os conceitos básicos até técnicas avançadas e boas práticas.
 
-## 🔄 Componentes Controlados vs. Não-Controlados
+## Componentes Controlados vs. Não-Controlados
 
 No React, existem duas abordagens principais para trabalhar com formulários:
 
-### 🎮 Componentes Controlados
+### Componentes Controlados
 
 Em componentes controlados, o React controla o estado do formulário. O valor do elemento é definido pelo estado e atualizado através de manipuladores de eventos:
 
@@ -41,13 +41,13 @@ function FormularioControlado() {
 }
 ```
 
-#### 🌟 Vantagens dos Componentes Controlados:
+#### Vantagens dos Componentes Controlados:
 - ✅ Acesso imediato ao valor do input (sem necessidade de refs)
 - ✅ Validação instantânea
 - ✅ Capacidade de controlar o que está sendo digitado
 - ✅ Fácil manipulação e transformação de dados
 
-### 🔓 Componentes Não-Controlados
+### Componentes Não-Controlados
 
 Componentes não-controlados deixam o DOM gerenciar o estado do formulário. Usamos refs para acessar os valores dos campos quando necessário:
 
@@ -72,14 +72,14 @@ function FormularioNaoControlado() {
 }
 ```
 
-#### 🌟 Vantagens dos Componentes Não-Controlados:
+#### Vantagens dos Componentes Não-Controlados:
 - ✅ Código mais simples para formulários básicos
 - ✅ Menos re-renderizações (melhor desempenho)
 - ✅ Integração mais fácil com bibliotecas DOM não-React
 
-## 📝 Trabalhando com Diferentes Tipos de Input
+## Trabalhando com Diferentes Tipos de Input
 
-### 🔤 Campos de Texto
+### Campos de Texto
 
 ```jsx
 function CamposTexto() {
@@ -189,7 +189,7 @@ function Preferencias() {
 }
 ```
 
-### 🔘 Radio Buttons
+### Radio Buttons
 
 ```jsx
 function OpcoesDePagamento() {
@@ -248,7 +248,7 @@ function OpcoesDePagamento() {
 }
 ```
 
-### 📋 Select e Multi-select
+### Select e Multi-select
 
 ```jsx
 function Selecoes() {
@@ -302,7 +302,7 @@ function Selecoes() {
 }
 ```
 
-### 📅 Inputs Numéricos e de Data
+### Inputs Numéricos e de Data
 
 ```jsx
 function DadosNumericos() {
@@ -361,7 +361,7 @@ function DadosNumericos() {
 }
 ``` 
 
-## 🛡️ Validação de Formulários
+## Validação de Formulários
 
 A validação é essencial para garantir que os dados fornecidos pelos usuários sejam corretos e seguros.
 
@@ -403,7 +403,7 @@ function FormularioValidacaoNativa() {
 }
 ```
 
-### 🚦 Validação Personalizada com Estado
+### Validação Personalizada com Estado
 
 ```jsx
 function FormularioValidacaoPersonalizada() {
@@ -504,7 +504,7 @@ function FormularioValidacaoPersonalizada() {
 }
 ```
 
-## 🏗️ Estrutura Recomendada para Formulários
+## Estrutura Recomendada para Formulários
 
 Organizar bem seus formulários pode facilitar a manutenção e melhorar a experiência do usuário:
 
@@ -630,11 +630,11 @@ function FormularioCadastro() {
 }
 ``` 
 
-## 📚 Bibliotecas Populares para Formulários
+## Bibliotecas Populares para Formulários
 
 Além da implementação manual, você pode utilizar bibliotecas especializadas para simplificar o gerenciamento de formulários complexos:
 
-### 🧩 Formik
+### Formik
 
 Formik é uma das bibliotecas mais populares para formulários em React:
 
@@ -701,7 +701,7 @@ function FormularioFormik() {
 }
 ```
 
-### 🪝 React Hook Form
+### React Hook Form
 
 Uma alternativa mais leve e focada em performance:
 
@@ -749,9 +749,9 @@ function FormularioHookForm() {
 }
 ```
 
-## 💡 Boas Práticas para Formulários React
+## Boas Práticas para Formulários React
 
-### 📋 Estrutura e Organização
+### Estrutura e Organização
 
 1. **Componentização**: Divida formulários grandes em componentes menores e reutilizáveis
 2. **Separação de Responsabilidades**: Mantenha lógica de validação separada da renderização
@@ -783,13 +783,13 @@ function FormularioCompra() {
 }
 ```
 
-### 🎯 Performance
+### Performance
 
 1. **Evite Re-renderizações Desnecessárias**: Use `useMemo`, `useCallback` ou bibliotecas como React Hook Form para minimizar re-renderizações
 2. **Validação Eficiente**: Faça validação no evento `onBlur` em vez de `onChange` para campos que requerem validação complexa
 3. **Debounce em Tempo Real**: Utilize debounce para validações em tempo real que são custosas
 
-### 👨‍👩‍👧‍👦 Acessibilidade
+### Acessibilidade
 
 1. **Use Labels Corretamente**: Sempre associe labels com inputs usando o atributo `htmlFor`
 2. **Mensagens de Erro Claras**: Associe mensagens de erro aos campos usando `aria-describedby`
@@ -815,14 +815,14 @@ function CampoAcessivel({ id, label, error, ...props }) {
 }
 ```
 
-### 🔒 Segurança
+### Segurança
 
 1. **Validação no Servidor**: Sempre valide dados no servidor, além do cliente
 2. **Sanitização de Dados**: Limpe e sanitize os dados antes de processá-los
 3. **Proteção CSRF**: Use tokens CSRF para formulários submetidos a APIs próprias
 4. **Rate Limiting**: Implemente limitação de taxa para evitar ataques de força bruta
 
-### 📱 Responsividade
+### Responsividade
 
 1. **Inputs de Tamanho Adequado**: Use unidades relativas (%, em, rem) em vez de pixels fixos
 2. **Labels Responsivos**: Em telas pequenas, coloque labels acima dos inputs
@@ -847,7 +847,7 @@ function CampoAcessivel({ id, label, error, ...props }) {
 }
 ```
 
-## 🚀 Dicas Avançadas
+## Dicas Avançadas
 
 1. **Formulários Dinâmicos**: Crie campos que aparecem/desaparecem com base em respostas anteriores
 2. **Auto-save**: Implemente salvamento automático para formulários longos
@@ -856,7 +856,7 @@ function CampoAcessivel({ id, label, error, ...props }) {
 
 ---
 
-[🔙 Voltar ao índice principal](../README.md)
+[Voltar ao índice principal](../README.md)
 
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=61DAFB&height=120&section=footer"/>
 

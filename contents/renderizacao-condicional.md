@@ -1,16 +1,16 @@
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=61DAFB&height=120&section=header"/>
 
-# 📋 Renderização Condicional no React 🔀
+# Renderização Condicional no React
 
-A renderização condicional permite mostrar ou ocultar elementos com base em condições, tornando suas interfaces dinâmicas e adaptáveis. Esta seção explora várias técnicas para implementar renderização condicional em seus componentes React. 🚀
+A renderização condicional permite mostrar ou ocultar elementos com base em condições, tornando suas interfaces dinâmicas e adaptáveis. Esta seção explora várias técnicas para implementar renderização condicional em seus componentes React.
 
-## 📝 O que é Renderização Condicional?
+## O que é Renderização Condicional?
 
 Renderização condicional significa exibir diferentes elementos ou componentes dependendo de condições específicas. Isso é fundamental para construir UIs interativas que respondem ao estado da aplicação e às ações do usuário.
 
-## 🔄 Métodos de Renderização Condicional
+## Métodos de Renderização Condicional
 
-### 1️⃣ Usando Declarações `if`
+### 1 Usando Declarações `if`
 
 A maneira mais simples é usar uma declaração `if` para determinar o que retornar:
 
@@ -23,7 +23,7 @@ function MensagemBoasVindas({ estaLogado }) {
 }
 ```
 
-### 2️⃣ Operador Ternário
+### 2 Operador Ternário
 
 Para condições simples dentro do JSX, o operador ternário é a escolha ideal:
 
@@ -38,7 +38,7 @@ function MensagemStatus({ estaOnline }) {
 }
 ```
 
-### 3️⃣ Operador Lógico AND (`&&`)
+### 3 Operador Lógico AND (`&&`)
 
 Útil quando você só precisa renderizar algo quando a condição for verdadeira:
 
@@ -64,7 +64,7 @@ function ListaDeNotificacoes({ mensagens }) {
 {mensagens.length > 0 && <p>Tem mensagens</p>} {/* Melhor abordagem */}
 ```
 
-### 4️⃣ Operador Lógico OR (`||`)
+### 4 Operador Lógico OR (`||`)
 
 Útil para fornecer valores padrão:
 
@@ -74,7 +74,7 @@ function SaudacaoUsuario({ nome }) {
 }
 ```
 
-### 5️⃣ Atribuição com Variáveis
+### 5 Atribuição com Variáveis
 
 Para lógica condicional mais complexa, use variáveis:
 
@@ -106,7 +106,7 @@ function StatusPedido({ status }) {
 }
 ```
 
-### 6️⃣ IIFE (Expressão de Função Imediatamente Invocada)
+### 6 IIFE (Expressão de Função Imediatamente Invocada)
 
 Para lógica condicional complexa dentro do JSX:
 
@@ -133,7 +133,7 @@ function ItemProduto({ produto }) {
 
 ⚠️ **Nota**: Use esta abordagem com moderação, pois pode prejudicar a legibilidade.
 
-### 7️⃣ Objetos de Mapeamento
+### 7 Objetos de Mapeamento
 
 Útil para várias condições sem muitos `if/else`:
 
@@ -150,9 +150,9 @@ function Mensagem({ tipo }) {
 }
 ```
 
-## 🎯 Casos de Uso Comuns
+## Casos de Uso Comuns
 
-### 🔒 Renderização de Conteúdo Baseada em Permissões
+### Renderização de Conteúdo Baseada em Permissões
 
 ```jsx
 function PainelAdmin({ usuario }) {
@@ -174,7 +174,7 @@ function PainelAdmin({ usuario }) {
 }
 ```
 
-### 🔄 Estados de Carregamento
+### Estados de Carregamento
 
 ```jsx
 function CarregamentoDados({ carregando, erro, dados }) {
@@ -208,7 +208,7 @@ function CarregamentoDados({ carregando, erro, dados }) {
 }
 ```
 
-### 📱 Renderização Responsiva
+### Renderização Responsiva
 
 ```jsx
 function ResponsiveLayout({ isMobile }) {
@@ -232,7 +232,7 @@ function ResponsiveLayout({ isMobile }) {
 }
 ```
 
-### 📝 Formulários Dinâmicos
+### Formulários Dinâmicos
 
 ```jsx
 function FormularioPagamento({ metodoPagamento }) {
@@ -278,9 +278,9 @@ function FormularioPagamento({ metodoPagamento }) {
 }
 ```
 
-## 🔍 Técnicas Avançadas
+## Técnicas Avançadas
 
-### 🎭 Componentes de Alto Nível Condicionais
+### Componentes de Alto Nível Condicionais
 
 ```jsx
 // Componente de alto nível condicional
@@ -313,7 +313,7 @@ function App() {
 }
 ```
 
-### 🎮 Renderizando Dinamicamente Componentes
+### Renderizando Dinamicamente Componentes
 
 ```jsx
 function Pagina({ secoes }) {
@@ -344,7 +344,7 @@ function Pagina({ secoes }) {
 }
 ```
 
-### 🧩 Renderização por Rotas Condicionais
+### Renderização por Rotas Condicionais
 
 ```jsx
 import { Routes, Route, Navigate } from 'react-router-dom';
@@ -377,7 +377,7 @@ function AppRoutes({ isAuthenticated }) {
 }
 ```
 
-## 🛑 Pitfalls e Soluções Comuns
+## Pitfalls e Soluções Comuns
 
 ### ⚠️ Usando Números e Valores Falsy
 
@@ -444,9 +444,9 @@ function ComponenteSimplificado({ a, b, c, d, e }) {
 {obj?.propriedade && <p>{obj.propriedade}</p>}
 ```
 
-## 🌟 Dicas e Melhores Práticas
+## Dicas e Melhores Práticas
 
-### 🎯 Mantenha a Lógica Simples
+### Mantenha a Lógica Simples
 
 A lógica condicional deve ser clara e fácil de entender:
 
@@ -463,7 +463,7 @@ function podeExibirComponenteA() {
 }
 ```
 
-### 🔄 Extraia Componentes Condicionais
+### Extraia Componentes Condicionais
 
 Se a lógica condicional se torna complexa, extraia-a em componentes separados:
 
@@ -477,7 +477,7 @@ function EstadoPedido({ status, pedido }) {
 }
 ```
 
-### 🧩 Use Componentes como Props para Casos Complexos
+### Use Componentes como Props para Casos Complexos
 
 ```jsx
 function Layout({ 
@@ -511,6 +511,6 @@ function Layout({
 
 ---
 
-[🔙 Voltar ao índice principal](../README.md)
+[Voltar ao índice principal](../README.md)
 
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=61DAFB&height=120&section=footer"/>

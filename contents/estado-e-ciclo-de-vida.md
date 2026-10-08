@@ -1,21 +1,21 @@
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=61DAFB&height=120&section=header"/>
 
-# 🔄 Estado e Ciclo de Vida no React 🔍
+# Estado e Ciclo de Vida no React
 
-O estado e o ciclo de vida são conceitos fundamentais do React que permitem aos componentes armazenar dados internos e responder às mudanças ao longo do tempo. Esta seção explora como gerenciar o estado em componentes e como utilizar os métodos do ciclo de vida para executar código em momentos específicos da "vida" de um componente. 🚀
+O estado e o ciclo de vida são conceitos fundamentais do React que permitem aos componentes armazenar dados internos e responder às mudanças ao longo do tempo. Esta seção explora como gerenciar o estado em componentes e como utilizar os métodos do ciclo de vida para executar código em momentos específicos da "vida" de um componente.
 
-## 📦 O que é Estado (State)?
+## O que é Estado (State)?
 
 O **estado** é um objeto JavaScript que contém dados específicos de um componente que podem mudar ao longo do tempo. Quando o estado de um componente muda, o React re-renderiza o componente para refletir as mudanças na UI.
 
-### 🎯 Características do Estado:
+### Características do Estado:
 
-- 🔒 **Privado** - Pertence exclusivamente ao componente que o define
-- 🧮 **Controlado** - Só deve ser atualizado com métodos específicos
-- 🔄 **Reativo** - Mudanças no estado causam re-renderização
-- 🧩 **Local** - Afeta apenas o componente e possivelmente seus filhos
+- **Privado** - Pertence exclusivamente ao componente que o define
+- **Controlado** - Só deve ser atualizado com métodos específicos
+- **Reativo** - Mudanças no estado causam re-renderização
+- **Local** - Afeta apenas o componente e possivelmente seus filhos
 
-## 💉 Estado com Hooks (Abordagem Moderna)
+## Estado com Hooks (Abordagem Moderna)
 
 O Hook `useState` é a forma recomendada de trabalhar com estado em componentes funcionais:
 
@@ -37,13 +37,13 @@ function Contador() {
 }
 ```
 
-### 📝 Aspectos importantes do `useState`:
+### Aspectos importantes do `useState`:
 
-- 🧪 A função `useState` retorna um array com dois elementos:
+- A função `useState` retorna um array com dois elementos:
   1. O valor atual do estado (`contagem`)
   2. Uma função para atualizar o estado (`setContagem`)
-- 🔢 O argumento passado para `useState` é o valor inicial do estado
-- 🔄 Podemos usar `useState` múltiplas vezes em um único componente:
+- O argumento passado para `useState` é o valor inicial do estado
+- Podemos usar `useState` múltiplas vezes em um único componente:
 
 ```jsx
 function Perfil() {
@@ -55,7 +55,7 @@ function Perfil() {
 }
 ```
 
-### 🧠 Estado com Objetos
+### Estado com Objetos
 
 Quando o estado é um objeto, você precisa garantir que todos os campos sejam preservados ao atualizar apenas um:
 
@@ -79,7 +79,7 @@ function FormularioUsuario() {
 }
 ```
 
-## 🏛️ Estado em Componentes de Classe (Abordagem Legada)
+## Estado em Componentes de Classe (Abordagem Legada)
 
 Em componentes de classe, o estado é definido na propriedade `state` e atualizado com `setState()`:
 
@@ -113,8 +113,8 @@ class Contador extends Component {
 
 ### ⚠️ Cuidados com `setState` em Classes:
 
-- 🔄 As atualizações de estado podem ser assíncronas
-- 🔀 As atualizações de estado podem ser agrupadas para melhorar o desempenho
+- As atualizações de estado podem ser assíncronas
+- As atualizações de estado podem ser agrupadas para melhorar o desempenho
 
 ```jsx
 // ❌ Não garante o valor correto se baseado no estado anterior
@@ -126,11 +126,11 @@ this.setState((estadoAnterior) => {
 });
 ```
 
-## 🔄 Ciclo de Vida de Componentes
+## Ciclo de Vida de Componentes
 
 O ciclo de vida de um componente React consiste em diferentes fases, desde a sua criação (montagem) até a sua remoção (desmontagem).
 
-### 🎣 Usando o Hook `useEffect` (Componentes Funcionais)
+### Usando o Hook `useEffect` (Componentes Funcionais)
 
 O Hook `useEffect` permite executar efeitos colaterais em componentes funcionais, substituindo os métodos de ciclo de vida:
 
@@ -172,11 +172,11 @@ function ExemploCicloDeVida() {
 }
 ```
 
-### 📊 Métodos de Ciclo de Vida (Componentes de Classe)
+### Métodos de Ciclo de Vida (Componentes de Classe)
 
 Em componentes de classe, temos métodos específicos que são chamados em diferentes momentos:
 
-#### 🏗️ Fase de Montagem
+#### Fase de Montagem
 
 ```jsx
 class MeuComponente extends Component {
@@ -203,7 +203,7 @@ class MeuComponente extends Component {
 }
 ```
 
-#### 🔄 Fase de Atualização
+#### Fase de Atualização
 
 ```jsx
 class MeuComponente extends Component {
@@ -234,7 +234,7 @@ class MeuComponente extends Component {
 }
 ```
 
-#### 🗑️ Fase de Desmontagem
+#### Fase de Desmontagem
 
 ```jsx
 class MeuComponente extends Component {
@@ -265,13 +265,13 @@ class MeuComponente extends Component {
 }
 ```
 
-## 🌊 Fluxo de Dados no React
+## Fluxo de Dados no React
 
 ### ⬇️ Fluxo Unidirecional
 
 No React, os dados fluem de cima para baixo (de componentes pais para filhos). Esta abordagem facilita o entendimento de como as informações se movem pela aplicação.
 
-### 🔄 Elevação de Estado (State Lifting)
+### Elevação de Estado (State Lifting)
 
 Quando componentes irmãos precisam compartilhar estado, elevamos o estado para o componente pai comum:
 
@@ -296,9 +296,9 @@ function Filho2({ onIncrement }) {
 }
 ```
 
-## 📝 Exemplos Práticos
+## Exemplos Práticos
 
-### 🔐 Formulário Controlado com `useState`
+### Formulário Controlado com `useState`
 
 ```jsx
 function Formulario() {
@@ -362,7 +362,7 @@ function Formulario() {
 }
 ```
 
-### ⏱️ Cronômetro com `useEffect`
+### Cronômetro com `useEffect`
 
 ```jsx
 function Cronometro() {
@@ -405,7 +405,7 @@ function Cronometro() {
 }
 ```
 
-### 🌐 Busca de Dados com `useEffect`
+### Busca de Dados com `useEffect`
 
 ```jsx
 function BuscaDados() {
@@ -452,6 +452,6 @@ function BuscaDados() {
 
 ---
 
-[🔙 Voltar ao índice principal](../README.md)
+[Voltar ao índice principal](../README.md)
 
-<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=61DAFB&height=120&section=footer"/> 
+<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=61DAFB&height=120&section=footer"/>

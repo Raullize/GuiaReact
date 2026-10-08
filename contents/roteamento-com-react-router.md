@@ -1,20 +1,20 @@
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=61DAFB&height=120&section=header"/>
 
-# 🧭 Roteamento com React Router 🗺️
+# Roteamento com React Router
 
-O React Router é uma biblioteca de roteamento para aplicações React que permite criar experiências de navegação dinâmicas, semelhantes às de aplicações multi-página, mas mantendo a fluidez de uma Single Page Application (SPA). Esta seção explora como implementar navegação usando React Router. 🚀
+O React Router é uma biblioteca de roteamento para aplicações React que permite criar experiências de navegação dinâmicas, semelhantes às de aplicações multi-página, mas mantendo a fluidez de uma Single Page Application (SPA). Esta seção explora como implementar navegação usando React Router.
 
-## 🤔 Por que Usar um Roteador?
+## Por que Usar um Roteador?
 
 O React, por si só, não inclui funcionalidades de roteamento. Para criar aplicações com múltiplas "páginas" (views), precisamos de uma solução de roteamento:
 
-- 🔀 **Navegação Sem Recarregar**: Mudança entre views sem recarregar completamente a página
-- 📚 **Organização de Código**: Separar a aplicação em componentes baseados em rotas
-- 🔄 **URLs Compartilháveis**: Permitir acessar diretamente qualquer view da aplicação
-- 🏠 **Navegação Natural**: Funcionalidades como voltar/avançar do navegador
-- 🧩 **Carregamento Dinâmico**: Carregar código sob demanda (lazy loading)
+- **Navegação Sem Recarregar**: Mudança entre views sem recarregar completamente a página
+- **Organização de Código**: Separar a aplicação em componentes baseados em rotas
+- **URLs Compartilháveis**: Permitir acessar diretamente qualquer view da aplicação
+- **Navegação Natural**: Funcionalidades como voltar/avançar do navegador
+- **Carregamento Dinâmico**: Carregar código sob demanda (lazy loading)
 
-## 🛠️ Instalação e Configuração
+## Instalação e Configuração
 
 Primeiro, instale o React Router:
 
@@ -26,7 +26,7 @@ npm install react-router-dom
 npm install react-router-native
 ```
 
-## 🚀 Roteamento Básico
+## Roteamento Básico
 
 ### Configuração de Rotas
 
@@ -56,7 +56,7 @@ function App() {
 export default App;
 ```
 
-### 🧭 Navegação Entre Rotas
+### Navegação Entre Rotas
 
 ```jsx
 import { Link, NavLink } from 'react-router-dom';
@@ -86,7 +86,7 @@ function Navegacao() {
 }
 ```
 
-## 📊 Rotas Aninhadas e Layouts
+## Rotas Aninhadas e Layouts
 
 O React Router permite organizar suas rotas em hierarquias, ideal para layouts compartilhados:
 
@@ -130,7 +130,7 @@ function Layout() {
 }
 ```
 
-## 📝 Parâmetros de Rota
+## Parâmetros de Rota
 
 ### Parâmetros de URL
 
@@ -193,7 +193,7 @@ function ListaProdutos() {
 }
 ```
 
-## 🔄 Navegação Programática
+## Navegação Programática
 
 Além de links, podemos navegar programaticamente:
 
@@ -226,7 +226,7 @@ function Autenticacao() {
 }
 ```
 
-## 🔒 Rotas Protegidas
+## Rotas Protegidas
 
 Você pode criar rotas protegidas que verificam a autenticação:
 
@@ -270,7 +270,7 @@ function App() {
 }
 ```
 
-## 🔄 Redirecionamentos
+## Redirecionamentos
 
 ```jsx
 import { Navigate } from 'react-router-dom';
@@ -284,7 +284,7 @@ function PaginaLegada() {
 }
 ```
 
-## 📱 Estrutura de Projeto Recomendada
+## Estrutura de Projeto Recomendada
 
 Uma boa organização para aplicações com React Router:
 
@@ -307,11 +307,11 @@ src/
   └── index.js           # Ponto de entrada
 ```
 
-## 🌟 React Router v6 - Novas Funcionalidades
+## React Router v6 - Novas Funcionalidades
 
 A versão 6 do React Router trouxe mudanças significativas:
 
-### 🧩 Componente Routes
+### Componente Routes
 
 ```jsx
 // React Router v5
@@ -327,7 +327,7 @@ A versão 6 do React Router trouxe mudanças significativas:
 </Routes>
 ```
 
-### 📊 Rotas Aninhadas Simplificadas
+### Rotas Aninhadas Simplificadas
 
 ```jsx
 // React Router v6
@@ -340,14 +340,14 @@ A versão 6 do React Router trouxe mudanças significativas:
 </Routes>
 ```
 
-### 🎯 No-Match Routes
+### No-Match Routes
 
 ```jsx
 // Captura qualquer rota não correspondida
 <Route path="*" element={<NotFound />} />
 ```
 
-## 📑 Exemplo Completo de Aplicação
+## Exemplo Completo de Aplicação
 
 Aqui está um exemplo mais completo de uma aplicação React com React Router:
 
@@ -440,7 +440,7 @@ function MainLayout() {
 }
 ```
 
-## 🎯 Dicas e Melhores Práticas
+## Dicas e Melhores Práticas
 
 1. **Use Lazy Loading**: Carregue componentes sob demanda para melhorar o tempo de carregamento inicial
 
@@ -478,6 +478,6 @@ function App() {
 
 ---
 
-[🔙 Voltar ao índice principal](../README.md)
+[Voltar ao índice principal](../README.md)
 
-<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=61DAFB&height=120&section=footer"/> 
+<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=61DAFB&height=120&section=footer"/>

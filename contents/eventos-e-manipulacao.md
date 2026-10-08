@@ -1,14 +1,14 @@
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=61DAFB&height=120&section=header"/>
 
-# ⚡ Eventos e Manipulação no React 🖱️
+# Eventos e Manipulação no React
 
-A manipulação de eventos é uma parte fundamental da criação de interfaces interativas no React. Esta seção explora como capturar e responder a interações do usuário, como cliques, entradas de formulário e muito mais. 🚀
+A manipulação de eventos é uma parte fundamental da criação de interfaces interativas no React. Esta seção explora como capturar e responder a interações do usuário, como cliques, entradas de formulário e muito mais.
 
-## 🎯 Eventos no React vs. HTML
+## Eventos no React vs. HTML
 
 O React implementa um sistema de eventos sintéticos que são similares, mas não idênticos, aos eventos nativos do DOM. Isso permite que o React trabalhe de forma consistente em diferentes navegadores.
 
-### 🔄 Principais Diferenças:
+### Principais Diferenças:
 
 ```jsx
 <!-- HTML tradicional -->
@@ -19,11 +19,11 @@ O React implementa um sistema de eventos sintéticos que são similares, mas nã
 ```
 
 Observe as diferenças:
-- 📝 Nome do evento em **camelCase** no React (`onClick` vs. `onclick`)
-- 🎭 No React, passamos uma **função** como manipulador, não uma string
-- ⛔ No React, não podemos retornar `false` para evitar comportamento padrão (use `preventDefault()`)
+- Nome do evento em **camelCase** no React (`onClick` vs. `onclick`)
+- No React, passamos uma **função** como manipulador, não uma string
+- No React, não podemos retornar `false` para evitar comportamento padrão (use `preventDefault()`)
 
-## 🖱️ Manipuladores de Eventos Básicos
+## Manipuladores de Eventos Básicos
 
 ### Manipulando Cliques
 
@@ -42,7 +42,7 @@ function BotaoExemplo() {
 }
 ```
 
-### 📝 Eventos de Formulário
+### Eventos de Formulário
 
 ```jsx
 function FormularioExemplo() {
@@ -60,11 +60,11 @@ function FormularioExemplo() {
 }
 ```
 
-## ⌨️ Lista de Eventos Comuns
+## Lista de Eventos Comuns
 
 O React suporta uma ampla variedade de eventos:
 
-### 🖱️ Eventos do Mouse
+### Eventos do Mouse
 - `onClick` - Clique do mouse
 - `onDoubleClick` - Clique duplo
 - `onMouseEnter` - Mouse entra na área do elemento
@@ -73,24 +73,24 @@ O React suporta uma ampla variedade de eventos:
 - `onMouseDown` - Botão do mouse é pressionado
 - `onMouseUp` - Botão do mouse é liberado
 
-### ⌨️ Eventos do Teclado
+### Eventos do Teclado
 - `onKeyDown` - Tecla é pressionada
 - `onKeyPress` - Tecla é pressionada (apenas caracteres)
 - `onKeyUp` - Tecla é liberada
 
-### 📝 Eventos de Formulário
+### Eventos de Formulário
 - `onChange` - Valor do input é alterado
 - `onInput` - Valor do input é alterado (menos comum no React)
 - `onSubmit` - Formulário é enviado
 - `onFocus` - Elemento recebe foco
 - `onBlur` - Elemento perde foco
 
-### 📱 Eventos de Toque
+### Eventos de Toque
 - `onTouchStart` - Toque iniciado
 - `onTouchMove` - Movimento durante toque
 - `onTouchEnd` - Toque finalizado
 
-## 🎯 Objeto de Evento Sintético
+## Objeto de Evento Sintético
 
 Quando um evento ocorre, o React passa um objeto de evento sintético para o manipulador:
 
@@ -114,7 +114,7 @@ function InputExemplo() {
 }
 ```
 
-### 📋 Propriedades e Métodos Comuns do Evento
+### Propriedades e Métodos Comuns do Evento
 
 - `e.target` - O elemento DOM que disparou o evento
 - `e.currentTarget` - O elemento que possui o manipulador de eventos
@@ -122,7 +122,7 @@ function InputExemplo() {
 - `e.stopPropagation()` - Impede a propagação do evento para elementos pai
 - `e.nativeEvent` - O evento DOM nativo subjacente
 
-## 🔄 Binding de `this` em Componentes de Classe
+## Binding de `this` em Componentes de Classe
 
 Em componentes de classe, precisamos vincular o `this` corretamente aos manipuladores de eventos:
 
@@ -175,7 +175,7 @@ class BotaoClasse extends React.Component {
 - Os métodos 1 e 2 são mais eficientes, pois o binding acontece apenas uma vez
 - Os métodos 3 e 4 criam uma nova função a cada renderização, o que pode afetar o desempenho
 
-## 🎯 Passando Argumentos para Manipuladores de Eventos
+## Passando Argumentos para Manipuladores de Eventos
 
 ### Em Componentes Funcionais
 
@@ -217,7 +217,7 @@ class ListaDeItens extends React.Component {
 }
 ```
 
-## 🧠 Manipulação de Eventos com Estado
+## Manipulação de Eventos com Estado
 
 A combinação de eventos e estado é onde o React realmente brilha:
 
@@ -248,7 +248,7 @@ function Contador() {
 }
 ```
 
-## 📝 Trabalhando com Formulários
+## Trabalhando com Formulários
 
 ### Campos de Texto
 
@@ -388,7 +388,7 @@ function OpcaoDePagamento() {
 }
 ```
 
-## 📋 Formulário Completo com Múltiplos Campos
+## Formulário Completo com Múltiplos Campos
 
 ```jsx
 function FormularioCadastro() {
@@ -550,7 +550,7 @@ function FormularioCadastro() {
 }
 ```
 
-## 🔄 Eventos Personalizados Entre Componentes
+## Eventos Personalizados Entre Componentes
 
 No React, "eventos personalizados" são implementados passando funções como props:
 
@@ -579,9 +579,9 @@ function App() {
 }
 ```
 
-## 🔍 Dicas de Otimização
+## Dicas de Otimização
 
-### 🐌 Evite Definir Funções Dentro de `render`/JSX
+### Evite Definir Funções Dentro de `render`/JSX
 
 ```jsx
 // ❌ Não recomendado: nova função em cada renderização
@@ -611,7 +611,7 @@ function ComponenteOtimizado() {
 }
 ```
 
-### 🧠 Use `useCallback` para Memorizar Manipuladores de Eventos
+### Use `useCallback` para Memorizar Manipuladores de Eventos
 
 ```jsx
 import React, { useState, useCallback } from 'react';
@@ -636,7 +636,7 @@ function ComponenteOtimizado({ itemId }) {
 }
 ```
 
-## 🐞 Depuração de Eventos
+## Depuração de Eventos
 
 ### Verificando se o Manipulador é Chamado
 
@@ -662,6 +662,6 @@ function DepuracaoDeEventos() {
 
 ---
 
-[🔙 Voltar ao índice principal](../README.md)
+[Voltar ao índice principal](../README.md)
 
-<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=61DAFB&height=120&section=footer"/> 
+<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=61DAFB&height=120&section=footer"/>

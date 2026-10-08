@@ -1,22 +1,22 @@
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=61DAFB&height=120&section=header"/>
 
-# 🔧 Testes em React 🧪
+# Testes em React
 
-Testar uma aplicação React é fundamental para garantir qualidade, confiabilidade e facilitar a manutenção do código. Esta seção explora diferentes tipos de testes, ferramentas e estratégias para testar componentes e aplicações React. 🚀
+Testar uma aplicação React é fundamental para garantir qualidade, confiabilidade e facilitar a manutenção do código. Esta seção explora diferentes tipos de testes, ferramentas e estratégias para testar componentes e aplicações React.
 
-## 🤔 Por que Testar?
+## Por que Testar?
 
 Testar suas aplicações React traz diversos benefícios:
 
-- 🐛 **Prevenção de bugs**: Detecte problemas antes que cheguem à produção
-- 🔄 **Refatoração segura**: Modifique código com confiança, sabendo que os testes alertarão sobre regressões
-- 📝 **Documentação viva**: Testes revelam como o código deve funcionar
-- ⚡ **Processo de desenvolvimento mais ágil**: Evite ciclos longos de debugging manual
-- 🧠 **Design de código melhor**: Código testável geralmente tem melhor arquitetura
+- **Prevenção de bugs**: Detecte problemas antes que cheguem à produção
+- **Refatoração segura**: Modifique código com confiança, sabendo que os testes alertarão sobre regressões
+- **Documentação viva**: Testes revelam como o código deve funcionar
+- **Processo de desenvolvimento mais ágil**: Evite ciclos longos de debugging manual
+- **Design de código melhor**: Código testável geralmente tem melhor arquitetura
 
-## 🧪 Tipos de Testes
+## Tipos de Testes
 
-### 🔍 Testes Unitários
+### Testes Unitários
 
 Testam componentes ou funções individuais de forma isolada:
 
@@ -37,7 +37,7 @@ test('renderiza a saudação com o nome correto', () => {
 });
 ```
 
-### 🧩 Testes de Integração
+### Testes de Integração
 
 Verificam a interação entre múltiplos componentes ou módulos:
 
@@ -74,7 +74,7 @@ test('incrementa o contador quando o botão é clicado', () => {
 });
 ```
 
-### 🖥️ Testes End-to-End (E2E)
+### Testes End-to-End (E2E)
 
 Simulam o uso real da aplicação pelo usuário:
 
@@ -95,16 +95,16 @@ describe('App E2E', () => {
 });
 ```
 
-## 🛠️ Ferramentas de Teste
+## Ferramentas de Teste
 
-### 🧰 Jest
+### Jest
 
 Jest é um framework de teste desenvolvido pelo Facebook, amplamente utilizado em projetos React:
 
-- 🔄 **Test runner**: Executa testes e relata resultados
+- **Test runner**: Executa testes e relata resultados
 - ✅ **Assertions**: Verificações como `expect(value).toBe(expected)`
-- 🧩 **Mocks, spies e stubs**: Ferramentas para simular dependências
-- 📊 **Cobertura de código**: Medição de quanto código é testado
+- **Mocks, spies e stubs**: Ferramentas para simular dependências
+- **Cobertura de código**: Medição de quanto código é testado
 
 ```jsx
 // Exemplo de teste com Jest
@@ -129,7 +129,7 @@ test('manipula erro na API', async () => {
 });
 ```
 
-### 🧪 React Testing Library
+### React Testing Library
 
 Biblioteca que incentiva boas práticas de teste, focando na experiência do usuário:
 
@@ -163,7 +163,7 @@ test('submete o formulário com os valores corretos', () => {
 });
 ```
 
-### 🎭 Enzyme
+### Enzyme
 
 Uma alternativa à Testing Library que permite testar a implementação interna:
 
@@ -183,7 +183,7 @@ test('incrementa quando o botão é clicado', () => {
 });
 ```
 
-### 🌐 Cypress
+### Cypress
 
 Ferramenta para testes end-to-end que permite testar a aplicação completa:
 
@@ -213,9 +213,9 @@ describe('Login', () => {
 });
 ```
 
-## 📋 Estratégias de Teste
+## Estratégias de Teste
 
-### 🧩 Testando Componentes de UI
+### Testando Componentes de UI
 
 Para componentes de apresentação:
 
@@ -243,7 +243,7 @@ test('chama a função onClick quando clicado', () => {
 });
 ```
 
-### 🧠 Testando Componentes com Estado
+### Testando Componentes com Estado
 
 Para componentes que gerenciam estado interno:
 
@@ -279,7 +279,7 @@ test('exibe conteúdo quando o título é clicado', () => {
 });
 ```
 
-### 🔌 Testando Hooks Personalizados
+### Testando Hooks Personalizados
 
 Para hooks customizados:
 
@@ -327,7 +327,7 @@ test('valida o campo nome como requerido', () => {
 });
 ```
 
-### 🌐 Testando Componentes com Context
+### Testando Componentes com Context
 
 Para componentes que usam React Context:
 
@@ -349,7 +349,7 @@ test('renderiza com a cor do tema', () => {
 });
 ```
 
-### 🔄 Testando Requisições API
+### Testando Requisições API
 
 Para componentes que fazem chamadas à API:
 
@@ -398,7 +398,7 @@ test('manipula erro da API', async () => {
 });
 ```
 
-### 🖥️ Testando Rotas e Navegação
+### Testando Rotas e Navegação
 
 Para testar navegação com React Router:
 
@@ -439,7 +439,7 @@ test('renderiza componentes de acordo com a rota', () => {
 });
 ```
 
-### 🧠 Testando Redux
+### Testando Redux
 
 Para componentes conectados ao Redux:
 
@@ -492,16 +492,16 @@ test('incrementa o contador quando o botão é clicado', () => {
 });
 ```
 
-## 📝 Boas Práticas de Teste
+## Boas Práticas de Teste
 
-### 🔍 O que Testar?
+### O que Testar?
 
 1. **Comportamento, não implementação**: Teste como o componente se comporta, não como é implementado
 2. **Principais caminhos do usuário**: Foque nos fluxos mais comuns e críticos
 3. **Edge cases**: Teste cenários extremos e condições de erro
 4. **Lógica de renderização condicional**: Verifique se o componente renderiza corretamente em diferentes estados
 
-### 🏆 Como Escrever Bons Testes
+### Como Escrever Bons Testes
 
 1. **Mantenha testes independentes**: Cada teste deve funcionar isoladamente
 2. **Organize em conjuntos lógicos**: Agrupe testes relacionados
@@ -535,7 +535,7 @@ describe('Componente Formulário', () => {
 });
 ```
 
-### 🧩 Mocks, Stubs e Spies
+### Mocks, Stubs e Spies
 
 Técnicas para isolar o código sendo testado:
 
@@ -558,7 +558,7 @@ expect(console.error).toHaveBeenCalledWith('mensagem de erro');
 fetchUsuarios.mockResolvedValue([{ id: 1, nome: 'João' }]);
 ```
 
-### 🔄 Configuração e Limpeza
+### Configuração e Limpeza
 
 Configure o ambiente antes dos testes e limpe depois:
 
@@ -586,7 +586,7 @@ afterEach(() => {
 });
 ```
 
-## 🎯 Métricas e Cobertura de Testes
+## Métricas e Cobertura de Testes
 
 Ferramentas como Jest fornecem relatórios de cobertura:
 
@@ -602,15 +602,15 @@ O relatório inclui:
 - **Functions**: Percentual de funções chamadas
 - **Lines**: Percentual de linhas executadas
 
-### 📊 Interpretando a Cobertura
+### Interpretando a Cobertura
 
-- 💯 **100% não é sempre necessário**: Foque na qualidade, não na quantidade
-- 🎯 **Áreas críticas**: Priorize partes importantes da aplicação
-- 🧠 **Cobertura não significa qualidade**: Testes mal escritos podem ter alta cobertura
+- **100% não é sempre necessário**: Foque na qualidade, não na quantidade
+- **Áreas críticas**: Priorize partes importantes da aplicação
+- **Cobertura não significa qualidade**: Testes mal escritos podem ter alta cobertura
 
-## 🔧 Configurando o Ambiente de Teste
+## Configurando o Ambiente de Teste
 
-### 🛠️ Create React App
+### Create React App
 
 Aplicações criadas com Create React App já vêm configuradas para testes:
 
@@ -622,7 +622,7 @@ npm test
 npm test -- --watchAll=false
 ```
 
-### ⚙️ Configuração Manual
+### Configuração Manual
 
 Para projetos personalizados:
 
@@ -664,7 +664,7 @@ window.matchMedia = window.matchMedia || function() {
 };
 ```
 
-## 🏭 Testes em Ambientes de CI/CD
+## Testes em Ambientes de CI/CD
 
 Integre testes em pipelines de integração contínua:
 
@@ -699,7 +699,7 @@ jobs:
       uses: codecov/codecov-action@v2
 ```
 
-## 🌟 Dicas e Melhores Práticas
+## Dicas e Melhores Práticas
 
 1. **Priorize testes que agregam valor**: Foque em funcionalidades críticas
 2. **Mantenha testes rápidos**: Testes lentos desaceleram o desenvolvimento
@@ -712,6 +712,6 @@ jobs:
 
 ---
 
-[🔙 Voltar ao índice principal](../README.md)
+[Voltar ao índice principal](../README.md)
 
-<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=61DAFB&height=120&section=footer"/> 
+<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=61DAFB&height=120&section=footer"/>

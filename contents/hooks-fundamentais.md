@@ -1,19 +1,19 @@
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=61DAFB&height=120&section=header"/>
 
-# 🔌 Hooks Fundamentais no React 🎣
+# Hooks Fundamentais no React
 
-Hooks são funções especiais introduzidas no React 16.8 que permitem usar recursos como estado e outras funcionalidades do React sem escrever componentes de classe. Esta seção explora os hooks principais e como utilizá-los para criar componentes funcionais poderosos. 🚀
+Hooks são funções especiais introduzidas no React 16.8 que permitem usar recursos como estado e outras funcionalidades do React sem escrever componentes de classe. Esta seção explora os hooks principais e como utilizá-los para criar componentes funcionais poderosos.
 
-## 🤔 Por que Hooks?
+## Por que Hooks?
 
 Antes dos Hooks, componentes com estado precisavam ser escritos como classes. Os Hooks resolvem vários problemas:
 
-- 💡 **Reutilização de lógica com estado** entre componentes sem padrões complexos
-- 🧩 **Organização de código** por funcionalidade em vez de ciclo de vida
-- 🔄 **Simplificação de componentes complexos** para melhor legibilidade
-- 📦 **Uso de recursos React em componentes funcionais** sem conversão para classes
+- **Reutilização de lógica com estado** entre componentes sem padrões complexos
+- **Organização de código** por funcionalidade em vez de ciclo de vida
+- **Simplificação de componentes complexos** para melhor legibilidade
+- **Uso de recursos React em componentes funcionais** sem conversão para classes
 
-## 🔄 useState: Gerenciando Estado Local
+## useState: Gerenciando Estado Local
 
 O hook `useState` permite adicionar estado a componentes funcionais:
 
@@ -35,7 +35,7 @@ function Contador() {
 }
 ```
 
-### 📝 Sintaxe do useState
+### Sintaxe do useState
 
 ```jsx
 const [variavel, funcaoAtualizadora] = useState(valorInicial);
@@ -45,7 +45,7 @@ const [variavel, funcaoAtualizadora] = useState(valorInicial);
 - `funcaoAtualizadora` - Função que atualiza o estado
 - `valorInicial` - O valor inicial do estado (número, string, booleano, array, objeto, etc)
 
-### 🧠 Estado com Objetos
+### Estado com Objetos
 
 ```jsx
 function Formulario() {
@@ -75,7 +75,7 @@ function Formulario() {
 }
 ```
 
-### 🔀 Atualizações Funcionais
+### Atualizações Funcionais
 
 Quando o novo estado depende do estado anterior, use a forma funcional:
 
@@ -94,7 +94,7 @@ function ContadorSeguro() {
 }
 ```
 
-## 🪝 useEffect: Efeitos Colaterais
+## useEffect: Efeitos Colaterais
 
 O hook `useEffect` permite executar efeitos colaterais em componentes funcionais:
 
@@ -118,7 +118,7 @@ function TituloDocumento() {
 }
 ```
 
-### 🧮 Sintaxe do useEffect
+### Sintaxe do useEffect
 
 ```jsx
 useEffect(() => {
@@ -131,7 +131,7 @@ useEffect(() => {
 }, [dependencias]); // Array de dependências (opcional)
 ```
 
-### 💫 Executando Efeitos Condicionalmente
+### Executando Efeitos Condicionalmente
 
 O array de dependências controla quando o efeito é executado:
 
@@ -156,7 +156,7 @@ function Perfil({ userId }) {
 }
 ```
 
-### 🔄 Ciclo de Vida com useEffect
+### Ciclo de Vida com useEffect
 
 Podemos simular os métodos de ciclo de vida com useEffect:
 
@@ -181,7 +181,7 @@ function CiclodeVida() {
 }
 ```
 
-### 🧹 Limpeza de Efeitos
+### Limpeza de Efeitos
 
 A função retornada é executada antes do efeito ser aplicado novamente ou quando o componente é desmontado:
 
@@ -202,7 +202,7 @@ function TimerComponent() {
 }
 ```
 
-## 🔍 useContext: Compartilhando Dados
+## useContext: Compartilhando Dados
 
 O hook `useContext` permite acessar o contexto sem componentes consumidores:
 
@@ -232,7 +232,7 @@ function Barra() {
 }
 ```
 
-## 📝 useRef: Referências Persistentes
+## useRef: Referências Persistentes
 
 O hook `useRef` cria uma referência mutável que persiste entre renderizações:
 
@@ -258,7 +258,7 @@ function InputComFoco() {
 }
 ```
 
-### 🔄 useRef Para Valores Persistentes
+### useRef Para Valores Persistentes
 
 Também pode ser usado para armazenar valores que não causam re-renderização:
 
@@ -296,9 +296,9 @@ function Temporizador() {
 }
 ```
 
-## 🧮 useMemo e useCallback: Otimização
+## useMemo e useCallback: Otimização
 
-### 🧠 useMemo: Memoização de Valores
+### useMemo: Memoização de Valores
 
 O hook `useMemo` memoriza o resultado de um cálculo custoso:
 
@@ -322,7 +322,7 @@ function ListaFiltrada({ itens, filtro }) {
 }
 ```
 
-### 📞 useCallback: Memoização de Funções
+### useCallback: Memoização de Funções
 
 O hook `useCallback` memoriza definições de funções:
 
@@ -352,7 +352,7 @@ const BotaoIncremento = React.memo(({ onIncremento }) => {
 });
 ```
 
-## 🛠️ useReducer: Estado Complexo
+## useReducer: Estado Complexo
 
 O hook `useReducer` é uma alternativa ao `useState` para lógica de estado complexo:
 
@@ -388,7 +388,7 @@ function ContadorAvancado() {
 }
 ```
 
-## 🧪 Criando Hooks Personalizados
+## Criando Hooks Personalizados
 
 Você pode criar seus próprios hooks para reutilizar lógica entre componentes:
 
@@ -505,7 +505,7 @@ function FormularioContato() {
 }
 ```
 
-## 🧰 Exemplo de Hook para Consumo de API
+## Exemplo de Hook para Consumo de API
 
 Um hook personalizado para chamadas de API:
 
@@ -575,7 +575,7 @@ function ProdutosLista() {
 }
 ```
 
-## 🧪 Regras dos Hooks
+## Regras dos Hooks
 
 Para usar hooks corretamente, siga estas regras:
 
@@ -608,6 +608,6 @@ function ComponenteCerto(props) {
 
 ---
 
-[🔙 Voltar ao índice principal](../README.md)
+[Voltar ao índice principal](../README.md)
 
-<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=61DAFB&height=120&section=footer"/> 
+<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=61DAFB&height=120&section=footer"/>

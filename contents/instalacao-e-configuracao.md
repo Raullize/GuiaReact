@@ -1,25 +1,25 @@
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=61DAFB&height=120&section=header"/>
 
-# 📂 Instalação e Configuração do React 🛠️
+# Instalação e Configuração do React
 
-Esta seção apresenta diferentes métodos para começar a desenvolver com React, desde ferramentas online até configurações completas de projetos locais. Escolha a opção que melhor se adapta às suas necessidades! 👨‍💻
+Esta seção apresenta diferentes métodos para começar a desenvolver com React, desde ferramentas online até configurações completas de projetos locais. Escolha a opção que melhor se adapta às suas necessidades!
 
-## 🌐 Opções Online (Sem Instalação)
+## Opções Online (Sem Instalação)
 
 Quer experimentar React sem instalar nada? Experimente estas ferramentas online:
 
 ### CodeSandbox
-- 🔗 [CodeSandbox React](https://codesandbox.io/s/new)
-- ✨ IDE completo no navegador
-- 📦 Templates prontos para React
-- 👥 Colaboração em tempo real
+- [CodeSandbox React](https://codesandbox.io/s/new)
+- IDE completo no navegador
+- Templates prontos para React
+- Colaboração em tempo real
 
 ### Stackblitz
-- 🔗 [Stackblitz React](https://stackblitz.com/fork/react)
-- ⚡ Rápido e leve
-- 🔄 Integração com GitHub
+- [Stackblitz React](https://stackblitz.com/fork/react)
+- Rápido e leve
+- Integração com GitHub
 
-## 🚀 Create React App (CRA)
+## Create React App (CRA)
 
 O método mais popular e recomendado para iniciantes. Configura um ambiente de desenvolvimento React com um único comando:
 
@@ -34,15 +34,15 @@ npm init react-app meu-projeto
 yarn create react-app meu-projeto
 ```
 
-### 📋 O que o CRA inclui:
-- ⚛️ Configuração otimizada do React
-- 📦 Webpack e Babel configurados
-- 🔄 Hot reloading (atualização automática)
-- 🧪 Jest para testes
-- 📝 ESLint para linting
-- 📱 Progressive Web App por padrão
+### O que o CRA inclui:
+- Configuração otimizada do React
+- Webpack e Babel configurados
+- Hot reloading (atualização automática)
+- Jest para testes
+- ESLint para linting
+- Progressive Web App por padrão
 
-### 📁 Estrutura de um projeto CRA:
+### Estrutura de um projeto CRA:
 ```
 meu-projeto/
   ├── node_modules/
@@ -63,7 +63,7 @@ meu-projeto/
   └── README.md
 ```
 
-### 🏃‍♂️ Comandos básicos:
+### Comandos básicos:
 ```bash
 # Iniciar o servidor de desenvolvimento
 npm start
@@ -78,7 +78,7 @@ npm test
 npm run eject # Cuidado: isso é irreversível!
 ```
 
-## ⚡ Vite
+## Vite
 
 Uma alternativa moderna e mais rápida que o Create React App:
 
@@ -94,13 +94,13 @@ cd meu-projeto-vite
 npm install # ou yarn
 ```
 
-### 🌟 Vantagens do Vite:
-- 🚀 Extremamente rápido (inicialização e HMR)
-- 📦 Bundling otimizado com Rollup
-- 🔌 Sistema de plugins simples
-- 🛠️ Configuração mais flexível que o CRA
+### Vantagens do Vite:
+- Extremamente rápido (inicialização e HMR)
+- Bundling otimizado com Rollup
+- Sistema de plugins simples
+- Configuração mais flexível que o CRA
 
-## 🧰 Next.js
+## Next.js
 
 Framework React completo com renderização do lado do servidor (SSR):
 
@@ -112,25 +112,25 @@ npx create-next-app meu-app-next
 npx create-next-app@latest --typescript
 ```
 
-### 🌟 Recursos do Next.js:
-- 🖥️ SSR (Server-Side Rendering)
-- 🗂️ Roteamento baseado em sistema de arquivos
-- 📄 SSG (Static Site Generation)
-- 🔄 ISR (Incremental Static Regeneration)
-- 📱 Otimização de imagens
-- 🌐 API Routes
+### Recursos do Next.js:
+- SSR (Server-Side Rendering)
+- Roteamento baseado em sistema de arquivos
+- SSG (Static Site Generation)
+- ISR (Incremental Static Regeneration)
+- Otimização de imagens
+- API Routes
 
-## 📝 Adicionando React a um Site Existente
+## Adicionando React a um Site Existente
 
 Se você deseja adicionar React a um site existente sem criar um novo projeto:
 
-### ▶️ Usando CDN (para prototipagem rápida):
+### ▶ Usando CDN (para prototipagem rápida):
 ```html
 <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
 ```
 
-### 📦 Usando npm em um projeto existente:
+### Usando npm em um projeto existente:
 ```bash
 # Instalar as dependências
 npm install react react-dom
@@ -139,7 +139,7 @@ npm install react react-dom
 npm install @babel/core @babel/preset-react babel-loader --save-dev
 ```
 
-## 🧩 TypeScript com React
+## TypeScript com React
 
 Para adicionar TypeScript ao seu projeto React:
 
@@ -153,26 +153,26 @@ npx create-react-app meu-app-ts --template typescript
 npm create vite@latest meu-app-vite -- --template react-ts
 ```
 
-### 🔍 Benefícios do TypeScript:
-- 🛡️ Tipagem estática
-- 🐞 Menos bugs em runtime
-- 📚 Melhor documentação de código
-- 💡 Melhor autocomplete no IDE
+### Benefícios do TypeScript:
+- Tipagem estática
+- Menos bugs em runtime
+- Melhor documentação de código
+- Melhor autocomplete no IDE
 
-## 📋 Requisitos do Sistema
+## Requisitos do Sistema
 
 Para desenvolver com React localmente, você precisará:
 
-- 🖥️ Node.js versão 14.0.0 ou superior
-- 📦 npm 5.6 ou superior (ou Yarn)
-- 🧰 Um editor de código (recomendamos VS Code)
-- 🌐 Navegador moderno para testar
+- Node.js versão 14.0.0 ou superior
+- npm 5.6 ou superior (ou Yarn)
+- Um editor de código (recomendamos VS Code)
+- Navegador moderno para testar
 
 ---
 
 ⚠️ **Nota importante**: Se você encontrar problemas de permissão ao executar comandos npm, tente usar o `npx` ou adicione `--user` aos comandos de instalação global.
 
-## 🔄 Atualizando o React
+## Atualizando o React
 
 Para projetos existentes, atualize o React com:
 
@@ -186,6 +186,6 @@ yarn upgrade react react-dom
 
 ---
 
-[🔙 Voltar ao índice principal](../README.md)
+[Voltar ao índice principal](../README.md)
 
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=61DAFB&height=120&section=footer"/>

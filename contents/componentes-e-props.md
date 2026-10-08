@@ -1,25 +1,25 @@
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=61DAFB&height=120&section=header"/>
 
-# 🧩 Componentes e Props no React 🔄
+# Componentes e Props no React
 
-Os componentes são os blocos de construção fundamentais de qualquer aplicação React. Esta seção aborda o que são componentes, como criá-los e como passamos dados para eles usando props. 🚀
+Os componentes são os blocos de construção fundamentais de qualquer aplicação React. Esta seção aborda o que são componentes, como criá-los e como passamos dados para eles usando props.
 
-## 📝 O que são Componentes?
+## O que são Componentes?
 
 **Componentes** são peças isoladas e reutilizáveis de código que retornam elementos React para serem renderizados na tela. Eles permitem dividir a UI em partes independentes, reutilizáveis e gerenciáveis.
 
-### 🌟 Vantagens da Componentização:
+### Vantagens da Componentização:
 
-- 🔄 **Reutilização** - Crie um componente uma vez e use-o em vários lugares
-- 🧩 **Modularidade** - Quebre a UI em partes gerenciáveis
-- 🧠 **Separação de preocupações** - Cada componente tem sua função específica
-- 🧪 **Testabilidade** - Mais fácil testar partes isoladas da aplicação
+- **Reutilização** - Crie um componente uma vez e use-o em vários lugares
+- **Modularidade** - Quebre a UI em partes gerenciáveis
+- **Separação de preocupações** - Cada componente tem sua função específica
+- **Testabilidade** - Mais fácil testar partes isoladas da aplicação
 
-## 🎭 Tipos de Componentes
+## Tipos de Componentes
 
 No React, existem duas principais formas de definir componentes:
 
-### 1️⃣ Componentes de Função (Recomendado)
+### 1 Componentes de Função (Recomendado)
 
 Mais simples e, com Hooks, agora tão poderosos quanto componentes de classe:
 
@@ -37,7 +37,7 @@ const Saudacao = (props) => {
 const Saudacao = props => <h1>Olá, {props.nome}!</h1>;
 ```
 
-### 2️⃣ Componentes de Classe
+### 2 Componentes de Classe
 
 Método mais antigo, ainda suportado, mas menos recomendado para novos códigos:
 
@@ -51,11 +51,11 @@ class Saudacao extends Component {
 }
 ```
 
-## 🎁 Props: Passando Dados para Componentes
+## Props: Passando Dados para Componentes
 
 **Props** (abreviação de "properties" ou propriedades) são o mecanismo para passar dados de um componente pai para um componente filho.
 
-### 📤 Passando Props:
+### Passando Props:
 
 ```jsx
 // Renderizando o componente com props
@@ -63,7 +63,7 @@ class Saudacao extends Component {
 <Saudacao nome="João" />
 ```
 
-### 📥 Recebendo Props:
+### Recebendo Props:
 
 ```jsx
 // Em componente de função
@@ -77,7 +77,7 @@ function Saudacao({ nome }) {
 }
 ```
 
-### 🔢 Tipos Comuns de Props:
+### Tipos Comuns de Props:
 
 ```jsx
 // Strings (use chaves apenas para expressões JS)
@@ -99,9 +99,9 @@ function Saudacao({ nome }) {
 <Botao onClick={() => console.log('Clicado!')} />
 ```
 
-### 🔄 Props Especiais:
+### Props Especiais:
 
-#### 👶 Children
+#### Children
 
 A prop especial `children` representa o conteúdo entre as tags de abertura e fechamento de um componente:
 
@@ -117,7 +117,7 @@ function Painel({ children }) {
 </Painel>
 ```
 
-## 🛡️ Validação de Props
+## Validação de Props
 
 Use `prop-types` para validar as props recebidas por um componente:
 
@@ -133,7 +133,7 @@ Saudacao.propTypes = {
 };
 ```
 
-### 📋 Tipos comuns de PropTypes:
+### Tipos comuns de PropTypes:
 
 ```jsx
 MyComponent.propTypes = {
@@ -174,7 +174,7 @@ MyComponent.propTypes = {
 };
 ```
 
-## 🛠️ Props Padrão
+## Props Padrão
 
 Defina valores padrão para props não fornecidas:
 
@@ -189,7 +189,7 @@ Saudacao.defaultProps = {
 };
 ```
 
-## 🧠 Props Imutáveis
+## Props Imutáveis
 
 Uma regra fundamental do React: **nunca modifique props**. Componentes React devem ser "puros" em relação às suas props.
 
@@ -207,7 +207,7 @@ function MeuComponente(props) {
 }
 ```
 
-## 🌲 Composição de Componentes
+## Composição de Componentes
 
 O React favorece a composição sobre a herança. Crie componentes maiores combinando componentes menores:
 
@@ -229,7 +229,7 @@ function App() {
 }
 ```
 
-## 🔍 Especialização de Componentes
+## Especialização de Componentes
 
 Crie componentes genéricos e especialize-os conforme necessário:
 
@@ -248,9 +248,9 @@ function Botao({ children, tamanho = 'medio', cor = 'primaria', ...props }) {
 <Botao onClick={handleClick} disabled={isLoading}>Salvar</Botao>
 ```
 
-## 🎨 Exemplos Práticos
+## Exemplos Práticos
 
-### 📱 Card de Produto
+### Card de Produto
 
 ```jsx
 function ProdutoCard({ produto }) {
@@ -275,7 +275,7 @@ const produto = {
 <ProdutoCard produto={produto} />
 ```
 
-### 📝 Formulário de Login
+### Formulário de Login
 
 ```jsx
 function CampoTexto({ label, id, ...props }) {
@@ -311,6 +311,6 @@ function FormularioLogin({ onSubmit }) {
 
 ---
 
-[🔙 Voltar ao índice principal](../README.md)
+[Voltar ao índice principal](../README.md)
 
-<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=61DAFB&height=120&section=footer"/> 
+<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=61DAFB&height=120&section=footer"/>

@@ -1,17 +1,17 @@
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=61DAFB&height=120&section=header"/>
 
-# 🏆 Boas Práticas no React 📋
+# Boas Práticas no React
 
-O desenvolvimento com React oferece grande flexibilidade, mas seguir boas práticas é essencial para criar aplicações sustentáveis, escaláveis e fáceis de manter. Esta seção apresenta diretrizes, padrões e estruturas recomendadas para projetos React. 🚀
+O desenvolvimento com React oferece grande flexibilidade, mas seguir boas práticas é essencial para criar aplicações sustentáveis, escaláveis e fáceis de manter. Esta seção apresenta diretrizes, padrões e estruturas recomendadas para projetos React.
 
-## 🧠 Princípios Fundamentais
+## Princípios Fundamentais
 
-### 📦 Componentização Eficiente
+### Componentização Eficiente
 
-- 🧩 **Componentes pequenos e focados**: Cada componente deve ter uma única responsabilidade
-- 🔄 **Componentes reutilizáveis**: Projete pensando em reuso
-- 🏗️ **Composição sobre herança**: Construa componentes complexos combinando componentes simples
-- 🧱 **Separe lógica de apresentação**: Use padrões como Container/Presentational ou hooks personalizados
+- **Componentes pequenos e focados**: Cada componente deve ter uma única responsabilidade
+- **Componentes reutilizáveis**: Projete pensando em reuso
+- **Composição sobre herança**: Construa componentes complexos combinando componentes simples
+- **Separe lógica de apresentação**: Use padrões como Container/Presentational ou hooks personalizados
 
 ```jsx
 // ❌ Componente muito grande e com múltiplas responsabilidades
@@ -41,14 +41,14 @@ function UserDashboard() {
 }
 ```
 
-### 🔍 Estado e Props
+### Estado e Props
 
-- 🧬 **Estado mínimo**: Mantenha apenas o essencial no estado
-- 📊 **Estado único**: Evite duplicação de estado
-- ⚡ **Elevação de estado**: Coloque estado no ancestral comum mais próximo
-- 🔒 **Props imutáveis**: Nunca modifique props recebidas
-- 📝 **Props descritivas**: Use nomes claros e descritivos
-- 🎯 **Valores padrão**: Forneça valores padrão para props opcionais
+- **Estado mínimo**: Mantenha apenas o essencial no estado
+- **Estado único**: Evite duplicação de estado
+- **Elevação de estado**: Coloque estado no ancestral comum mais próximo
+- **Props imutáveis**: Nunca modifique props recebidas
+- **Props descritivas**: Use nomes claros e descritivos
+- **Valores padrão**: Forneça valores padrão para props opcionais
 
 ```jsx
 // ❌ Props mal nomeadas
@@ -67,13 +67,13 @@ function Button({ isPrimary = false, text = "Button", onClick }) {
 }
 ```
 
-### 🧹 Limpeza e Organização
+### Limpeza e Organização
 
-- 📁 **Estrutura de arquivos lógica**: Organize por recurso ou tipo
-- 🧬 **Separação de responsabilidades**: Cada arquivo deve ter um propósito claro
-- 📏 **Consistência de estilo**: Use ferramentas como ESLint e Prettier
-- 📚 **Documentação**: Comente código complexo e use JSDoc para APIs públicas
-- 🏷️ **Nomeação clara**: Nomes descritivos para componentes, funções e variáveis
+- **Estrutura de arquivos lógica**: Organize por recurso ou tipo
+- **Separação de responsabilidades**: Cada arquivo deve ter um propósito claro
+- **Consistência de estilo**: Use ferramentas como ESLint e Prettier
+- **Documentação**: Comente código complexo e use JSDoc para APIs públicas
+- **Nomeação clara**: Nomes descritivos para componentes, funções e variáveis
 
 ```jsx
 // ❌ Nome genérico e pouco descritivo
@@ -83,11 +83,11 @@ function Comp() { /* ... */ }
 function ProductRecommendationCard() { /* ... */ }
 ```
 
-## 🏗️ Estrutura de Projeto
+## Estrutura de Projeto
 
 Uma estrutura bem organizada facilita a navegação, manutenção e escalabilidade:
 
-### 📂 Estrutura de Diretórios Baseada em Recursos
+### Estrutura de Diretórios Baseada em Recursos
 
 ```
 src/
@@ -121,7 +121,7 @@ src/
 └── index.jsx            # Ponto de entrada
 ```
 
-### 📄 Estrutura de Arquivos de Componentes
+### Estrutura de Arquivos de Componentes
 
 Organize componentes com arquivos relacionados:
 
@@ -148,9 +148,9 @@ Isso permite importações limpas:
 import Button from 'components/Button';
 ```
 
-## 🔄 Padrões de Componentes
+## Padrões de Componentes
 
-### 🧩 Componentes de Função vs. Classe
+### Componentes de Função vs. Classe
 
 Prefira componentes de função com hooks:
 
@@ -188,7 +188,7 @@ function UserProfile({ userId }) {
 }
 ```
 
-### 🧠 Padrão Container/Presentational
+### Padrão Container/Presentational
 
 Separe lógica de apresentação:
 
@@ -225,7 +225,7 @@ function UserProfilePresentation({ user, loading }) {
 }
 ```
 
-### 🧰 Hooks Personalizados
+### Hooks Personalizados
 
 Extraia lógica reutilizável para hooks:
 
@@ -286,7 +286,7 @@ function UserProfile({ userId }) {
 }
 ```
 
-### 🧮 Padrão Render Props
+### Padrão Render Props
 
 Compartilhe lógica entre componentes:
 
@@ -317,7 +317,7 @@ function MouseTracker({ render }) {
 />
 ```
 
-### 🧱 Composição com Children
+### Composição com Children
 
 Use `children` para criar componentes flexíveis:
 
@@ -343,16 +343,16 @@ function Card({ title, children }) {
 </Card>
 ```
 
-## 🔄 Gerenciamento de Estado
+## Gerenciamento de Estado
 
-### 🧠 Escolhendo a Abordagem Certa
+### Escolhendo a Abordagem Certa
 
 - **useState**: Para estado local simples
 - **useReducer**: Para estado local mais complexo ou com lógica de atualização
 - **Context API**: Para estado compartilhado entre componentes próximos
 - **Redux/Zustand/Jotai/etc**: Para estado global em aplicações maiores
 
-### 📱 Estado Local vs. Global
+### Estado Local vs. Global
 
 Prefira estado local sempre que possível:
 
@@ -382,7 +382,7 @@ function Counter() {
 }
 ```
 
-### 🧬 Fragmentação de Estado
+### Fragmentação de Estado
 
 Divida o estado em pedaços lógicos:
 
@@ -416,9 +416,9 @@ function UserForm() {
 }
 ```
 
-## 📱 Organização de Código
+## Organização de Código
 
-### 🧠 Ordem Lógica em Componentes
+### Ordem Lógica em Componentes
 
 Mantenha uma estrutura consistente:
 
@@ -454,7 +454,7 @@ function MyComponent({ propA, propB }) {
 }
 ```
 
-### 🔄 Desestruturação e Espalhamento
+### Desestruturação e Espalhamento
 
 Use desestruturação para código mais limpo:
 
@@ -499,7 +499,7 @@ function Button({ className, ...rest }) {
 }
 ```
 
-### 📂 Importações Organizadas
+### Importações Organizadas
 
 Organize suas importações por categoria:
 
@@ -520,9 +520,9 @@ import { formatDate } from 'utils';
 import styles from './UserProfile.module.css';
 ```
 
-## 🔍 Performance
+## Performance
 
-### 🧮 Memoização Eficiente
+### Memoização Eficiente
 
 Use `React.memo`, `useMemo` e `useCallback` para prevenir renderizações desnecessárias:
 
@@ -555,7 +555,7 @@ function UserActions({ userId }) {
 }
 ```
 
-### 🔎 Virtualização para Listas Grandes
+### Virtualização para Listas Grandes
 
 Use bibliotecas como `react-window` ou `react-virtualized` para listas longas:
 
@@ -582,7 +582,7 @@ function VirtualizedList({ items }) {
 }
 ```
 
-### 🚀 Code Splitting
+### Code Splitting
 
 Divida seu código com `React.lazy` e `Suspense`:
 
@@ -605,9 +605,9 @@ function App() {
 }
 ```
 
-## 🧪 Testabilidade
+## Testabilidade
 
-### 📝 Código Testável
+### Código Testável
 
 Escreva código fácil de testar:
 
@@ -660,7 +660,7 @@ function UserStatus({ userId }) {
 }
 ```
 
-### 🧰 Test-Driven Development (TDD)
+### Test-Driven Development (TDD)
 
 Considere escrever testes antes da implementação:
 
@@ -695,7 +695,7 @@ function UserStatus({ userId }) {
 }
 ```
 
-## 🧩 Exemplo de Aplicação Completa
+## Exemplo de Aplicação Completa
 
 Uma demonstração de projeto estruturado com boas práticas:
 
@@ -894,9 +894,9 @@ export default function App() {
 }
 ```
 
-## 🔍 Depuração e Solução de Problemas
+## Depuração e Solução de Problemas
 
-### 🐛 DevTools e Ferramentas
+### DevTools e Ferramentas
 
 - **React DevTools**: Inspecione componentes, props, estado e performance
 - **Redux DevTools**: Monitore ações e estado quando usar Redux
@@ -940,13 +940,13 @@ class ErrorBoundary extends React.Component {
 </ErrorBoundary>
 ```
 
-### 🔍 Logging e Depuração
+### Logging e Depuração
 
 - Use `console.log` estrategicamente (remova em produção)
 - Implemente registros estruturados para depuração avançada
 - Configure breakpoints no DevTools do navegador
 
-## 🌟 Dicas Finais
+## Dicas Finais
 
 1. **Mantenha-se atualizado**: O ecossistema React evolui rapidamente
 2. **Evite otimização prematura**: Primeiro faça funcionar, depois otimize
@@ -959,6 +959,6 @@ class ErrorBoundary extends React.Component {
 
 ---
 
-[🔙 Voltar ao índice principal](../README.md)
+[Voltar ao índice principal](../README.md)
 
-<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=61DAFB&height=120&section=footer"/> 
+<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=61DAFB&height=120&section=footer"/>

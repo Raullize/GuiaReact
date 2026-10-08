@@ -1,23 +1,23 @@
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=61DAFB&height=120&section=header"/>
 
-# 🌐 Consumo de APIs no React 📡
+# Consumo de APIs no React
 
-Conectar aplicações React a APIs web é essencial para criar aplicações dinâmicas que consomem e manipulam dados de servidores externos. Esta seção explora diferentes abordagens para integrar APIs em suas aplicações React. 🚀
+Conectar aplicações React a APIs web é essencial para criar aplicações dinâmicas que consomem e manipulam dados de servidores externos. Esta seção explora diferentes abordagens para integrar APIs em suas aplicações React.
 
-## 🤔 O que são APIs e por que usá-las?
+## O que são APIs e por que usá-las?
 
 **API** (Interface de Programação de Aplicações) é um conjunto de regras que permite que diferentes aplicações se comuniquem entre si.
 
-### 🌟 Benefícios do Uso de APIs:
+### Benefícios do Uso de APIs:
 
-- 🔄 **Separação de responsabilidades**: Frontend e backend desacoplados
-- 📦 **Reutilização de dados**: Mesma API pode servir múltiplas interfaces
-- 🔄 **Escalabilidade**: Facilita o crescimento independente de cada parte da aplicação
-- 🌍 **Integração**: Permite conectar-se a serviços de terceiros
+- **Separação de responsabilidades**: Frontend e backend desacoplados
+- **Reutilização de dados**: Mesma API pode servir múltiplas interfaces
+- **Escalabilidade**: Facilita o crescimento independente de cada parte da aplicação
+- **Integração**: Permite conectar-se a serviços de terceiros
 
-## 🛠️ Métodos para Consumir APIs
+## Métodos para Consumir APIs
 
-### 📦 Fetch API (Nativa)
+### Fetch API (Nativa)
 
 A Fetch API é nativa do JavaScript moderno e oferece uma maneira simples de fazer requisições HTTP:
 
@@ -62,7 +62,7 @@ function ListaUsuarios() {
 }
 ```
 
-### 🔄 Fetch com Async/Await
+### Fetch com Async/Await
 
 Uma abordagem mais limpa usando `async/await`:
 
@@ -101,7 +101,7 @@ function ListaProdutos() {
 }
 ```
 
-### 📋 Axios (Biblioteca Popular)
+### Axios (Biblioteca Popular)
 
 Axios é uma biblioteca que facilita requisições HTTP e oferece uma API mais amigável:
 
@@ -157,7 +157,7 @@ function DetalhesProduto({ id }) {
 }
 ```
 
-## 🧪 Criando um Hook Personalizado para Requisições
+## Criando um Hook Personalizado para Requisições
 
 Crie hooks reutilizáveis para diferentes necessidades de requisições:
 
@@ -246,7 +246,7 @@ function App() {
 }
 ```
 
-## 🔄 Estados da Requisição
+## Estados da Requisição
 
 É importante gerenciar adequadamente os diferentes estados de uma requisição:
 
@@ -325,7 +325,7 @@ function FormularioEnvio() {
 }
 ```
 
-## 🛡️ Autenticação e Headers
+## Autenticação e Headers
 
 Muitas APIs requerem autenticação. Veja como implementar:
 
@@ -447,9 +447,9 @@ function PerfilUsuario() {
 }
 ```
 
-## 📋 Manipulando Diferentes Tipos de Requisição
+## Manipulando Diferentes Tipos de Requisição
 
-### 🔍 GET: Buscar Dados
+### GET: Buscar Dados
 
 ```jsx
 // Buscar uma lista de itens
@@ -476,7 +476,7 @@ const buscarProdutosFiltrados = async (categoria, ordenacao) => {
 };
 ```
 
-### 📝 POST: Criar Dados
+### POST: Criar Dados
 
 ```jsx
 // Criar um novo recurso
@@ -500,7 +500,7 @@ const uploadImagem = async (arquivo) => {
 };
 ```
 
-### 🔄 PUT/PATCH: Atualizar Dados
+### PUT/PATCH: Atualizar Dados
 
 ```jsx
 // Atualização completa (PUT)
@@ -516,7 +516,7 @@ const atualizarParcialmente = async (id, campos) => {
 };
 ```
 
-### 🗑️ DELETE: Remover Dados
+### DELETE: Remover Dados
 
 ```jsx
 // Excluir um recurso
@@ -526,7 +526,7 @@ const excluirProduto = async (id) => {
 };
 ```
 
-## 📊 Lidando com Respostas da API
+## Lidando com Respostas da API
 
 ### ✅ Tratamento de Sucesso
 
@@ -594,9 +594,9 @@ try {
 }
 ```
 
-## 🧩 Estratégias de Manipulação de API
+## Estratégias de Manipulação de API
 
-### 🏗️ Centralização de Serviços
+### Centralização de Serviços
 
 Organize seu código isolando lógica de API em serviços:
 
@@ -650,7 +650,7 @@ export const ProdutosService = {
 };
 ```
 
-### 🧠 Uso de Hooks Personalizados
+### Uso de Hooks Personalizados
 
 Encapsule a lógica de API em hooks personalizados para reuso:
 
@@ -703,9 +703,9 @@ export function useProdutos() {
 }
 ```
 
-## 📱 Gerenciamento de Cache e Otimização
+## Gerenciamento de Cache e Otimização
 
-### 📋 Implementação de Cache Básico
+### Implementação de Cache Básico
 
 ```jsx
 // Hook simples com cache
@@ -767,7 +767,7 @@ function useAPIComCache(url) {
 }
 ```
 
-### 🚀 Bibliotecas de Gerenciamento de Cache
+### Bibliotecas de Gerenciamento de Cache
 
 Para projetos maiores, considere bibliotecas especializadas:
 
@@ -821,7 +821,7 @@ function ProdutosPage() {
 }
 ```
 
-## 🧪 Testando Código que Consome API
+## Testando Código que Consome API
 
 Usando Jest e Testing Library para testar componentes que consomem APIs:
 
@@ -871,7 +871,7 @@ describe('ListaProdutos', () => {
 });
 ```
 
-## 🛠️ Dicas e Melhores Práticas
+## Dicas e Melhores Práticas
 
 1. **Centralize a Lógica de API**: Use serviços ou hooks personalizados para isolar chamadas de API
 2. **Implemente Tratamento de Erros Robusto**: Lide com diferentes cenários de erro com graciosidade
@@ -884,6 +884,6 @@ describe('ListaProdutos', () => {
 
 ---
 
-[🔙 Voltar ao índice principal](../README.md)
+[Voltar ao índice principal](../README.md)
 
-<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=61DAFB&height=120&section=footer"/> 
+<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=61DAFB&height=120&section=footer"/>
